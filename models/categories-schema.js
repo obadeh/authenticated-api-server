@@ -1,8 +1,10 @@
+/* eslint-disable camelcase */
 
 
 const mongoose = require('mongoose');
 require('./products-schema.js');
 
+// eslint-disable-next-line new-cap
 const categoriesSchema = mongoose.Schema({
 
   name: { type: String, required: true },

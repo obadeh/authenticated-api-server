@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 
 const { server } = require('../lib/server.js');
 const supergoose = require('@code-fellows/supergoose');

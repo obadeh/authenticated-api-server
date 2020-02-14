@@ -28,6 +28,7 @@ class DataModel {
    * @memberof DataModel
    */
   create(record) {
+    // eslint-disable-next-line new-cap
     let item = new this.schema(record);
     return item.save();
   }

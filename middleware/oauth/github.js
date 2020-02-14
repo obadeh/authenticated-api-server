@@ -3,7 +3,6 @@
 
 const superagent = require('superagent');
 const User = require('../../models/users/users-model.js');
-const jwt = require('jsonwebtoken');
 
 
 const tokenServerUrl = 'https://github.com/login/oauth/access_token';
