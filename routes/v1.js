@@ -35,10 +35,10 @@ function getModel(req, res, next) {
 router.param('model', getModel);
 
 router.get('/api/v1/:model',auth() ,handleGetAll);
-router.post('/api/v1/:model',auth("create") ,handlePost);
+router.post('/api/v1/:model',auth('create') ,handlePost);
 router.get('/api/v1/:model/:id',auth(), handleGetOne);
-router.put('/api/v1/:model/:id', auth("update"),handleUpdate);
-router.delete('/api/v1/:model/:id', auth("delete"), handleDelete);
+router.put('/api/v1/:model/:id', auth('update'),handleUpdate);
+router.delete('/api/v1/:model/:id', auth('delete'), handleDelete);
 
 /**
  *handler function for get all

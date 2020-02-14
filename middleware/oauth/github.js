@@ -69,7 +69,7 @@ async function getUserAndSave(remoteUser) {
 
   new User(userRecord).save();
   let user = userRecord.username;
-  let token = User.generateToken(userRecord)
+  let token = User.generateToken(userRecord);
 
 
   return [user, token];
